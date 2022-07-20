@@ -1,18 +1,18 @@
 # Animal Crossing Villager Guide
 
 ## Description
-> Work in progress...
+Working with API requests and practice more DOM manipulation. 
 
 ## 💭 Takeaways
 > Work in progress...
 
 ### Resources
-> Work in progress...
+- [ACNH API](http://acnhapi.com/)
 
 ## 🚧 Roadmap
 > Work in progress...
 
 ### Layout & Styling
-- [ ] Edit grass background – drop opacity to make it more subtle
+> Work in progress...
 
 ### Functionality
