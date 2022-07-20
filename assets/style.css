@@ -79,3 +79,12 @@ html {
   display: flex;
 }
 
+/**********/
+/* layout */
+/**********/
+
+#stat-img {
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 50%;
+}
