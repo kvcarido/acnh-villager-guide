@@ -12,8 +12,8 @@ Working with API requests and practice more DOM manipulation. I wanted to challe
 
 ## 🚧 Roadmap
 > Work in progress...
-- [ ] Originally started with ACNH API since it didn't require a key, but switched to Nookipedia API
-- [ ] Refactor getFetch()
+- [x] Originally started with ACNH API since it didn't require a key, but switched to Nookipedia API
+    - [x] Refactor getFetch()
 
 ### Layout & Styling
 > Work in progress...

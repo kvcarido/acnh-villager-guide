@@ -84,7 +84,14 @@ html {
 /**********/
 
 #stat-img {
-  margin: 0 auto;
   max-width: 100%;
-  border-radius: 50%;
 }
+
+.villager-img {
+  max-width: 12rem;
+  margin: 0 auto;
+}
+
+/**********/
+/* styles */
+/**********/

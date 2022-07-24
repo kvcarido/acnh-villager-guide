@@ -5,6 +5,7 @@ const species = document.querySelector("#stat-species")
 const personality = document.querySelector("#stat-personality")
 const gender = document.querySelector("#stat-gender")
 const birthday = document.querySelector("#stat-birthday")
+const quote = document.querySelector("#quote")
 const img = document.querySelector("#stat-img")
 
 
@@ -13,24 +14,30 @@ const random = () => {
 }
 
 const getFetch = () => {
-    let roll = random()
-    const url = `https://acnhapi.com/v1a/villagers/${roll}`
+    const url = 'https://api.nookipedia.com/villagers?game=nh'
+    const key = ''
 
-    fetch(url)
+    fetch(url, {
+        headers: {
+            'x-api-key': key
+        }
+    })
     .then(res => res.json()) // parse response as JSON
     .then(data => {
-        villagerName.append(Array(data.name)[0]["name-USen"])
-        species.append(data.species)
-        personality.append(data.personality)
-        gender.append(data.gender)
-        birthday.append(data.birthday)
-        img.src = data.image_uri
+        const random = Math.floor(Math.random() * 413) + 1
+
+        villagerName.append(data[random].name)
+        species.append(data[random].species)
+        personality.append(data[random].personality)
+        gender.append(data[random].gender)
+        birthday.append(`${data[random].birthday_month} ${data[random].birthday_day}`)
+        quote.innerHTML = data[random].quote
+        img.src = data[random].image_url
     })
     .catch(err => {
         console.log(`error ${err}`)
     });
 }
-
 
 const updateDom = (name) => {
     villagerName.innerHTML = name
