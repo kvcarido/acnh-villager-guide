@@ -11,7 +11,8 @@ Working with API requests and practice more DOM manipulation. I wanted to challe
 - [Nookipedia API](https://api.nookipedia.com/)
 
 ## 🚧 Roadmap
-> Work in progress...
+> Work in progress... But if you really must know, see [ROADMAP.md](/ROADMAP.md)
+
 - [x] Originally started with ACNH API since it didn't require a key, but switched to Nookipedia API
     - [x] Refactor getFetch()
 

@@ -4,6 +4,17 @@
 
 :root {
     --spacer: 1rem;
+
+    /* colors */
+    --light-green: #88C9A2;
+    --medium-green: #5BAB87;
+    --dark-green: #1F7D74;
+    --super-pale-yellow: #FDFAD8;
+    --pale-yellow: #F8EEBC;
+    --golden-yellow: #FCDF6F;
+    --dark-golden-yellow: #F2D263;
+    --light-brown: #936B27;
+
 }
 
 /****************/

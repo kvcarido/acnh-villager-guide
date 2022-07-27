@@ -8,14 +8,19 @@ const birthday = document.querySelector("#stat-birthday")
 const quote = document.querySelector("#quote")
 const img = document.querySelector("#stat-img")
 
+// require('dotenv').config()
 
 const random = () => {
     return Math.floor(Math.random() * 390) + 1
 }
 
 const getFetch = () => {
-    const url = 'https://api.nookipedia.com/villagers?game=nh'
-    const key = ''
+    const url = 'https://api.nookipedia.com/villagers?game=nh&birthmonth=8&birthday=7'
+
+    /***************************/
+    /* REMOVE THIS BEFORE PUSH */
+    const key = 'you-thought-id-slip'
+    /***************************/
 
     fetch(url, {
         headers: {
@@ -24,15 +29,16 @@ const getFetch = () => {
     })
     .then(res => res.json()) // parse response as JSON
     .then(data => {
-        const random = Math.floor(Math.random() * 413) + 1
+        // const random = Math.floor(Math.random() * 413) + 1
 
-        villagerName.append(data[random].name)
-        species.append(data[random].species)
-        personality.append(data[random].personality)
-        gender.append(data[random].gender)
-        birthday.append(`${data[random].birthday_month} ${data[random].birthday_day}`)
-        quote.innerHTML = data[random].quote
-        img.src = data[random].image_url
+        // villagerName.append(data[random].name)
+        // species.append(data[random].species)
+        // personality.append(data[random].personality)
+        // gender.append(data[random].gender)
+        // birthday.append(`${data[random].birthday_month} ${data[random].birthday_day}`)
+        // quote.innerHTML = data[random].quote
+        // img.src = data[random].image_url
+        console.log(data)
     })
     .catch(err => {
         console.log(`error ${err}`)
